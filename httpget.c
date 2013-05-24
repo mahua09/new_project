@@ -434,7 +434,7 @@ char *get_json(char *url)
 	strcat(city, " HTTP/1.1\n");
 	memset(str1, 0, 4096);
 	strcat(str1, city);
-	strcat(str1, "Host: 10.124.20.136\n");
+	strcat(str1, "Host: xxx.xxx.xxx.xxx\n");
 	strcat(str1, "Content-Type: application/x-www-form-urlencoded\n");
 	strcat(str1, "Content-Length: 0");
 	strcat(str1, "\n\n");
