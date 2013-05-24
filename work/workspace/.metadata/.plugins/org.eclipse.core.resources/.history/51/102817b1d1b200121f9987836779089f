@@ -1,0 +1,118 @@
+package test;
+
+import com.travelsky.sbeclient.obe.request.AVRequest;
+
+public class MyAVRequest extends AVRequest {
+	public String org;// 出发城市 必填
+	public String dst;// 抵达城市 必填
+	public String date;// 查询日期，格式yyyy-MM-dd 必填
+	public String airline;// 航空公司 必填
+	// public String direct;//是否直飞 false
+	public boolean direct = false;// 是否直飞 可选
+	// public String nonstop;//是否有经停点 可选
+	public boolean nonstop = false;// 是否有经停点 可选
+	public String stopCity;// 转机地（中转城市） 可选
+	public String fltNo;// 航班号除了查询日期外，这个条件跟其他条件不能共存 可选
+	public String transit;// 中转城市 可选
+	public int page = 30;// 限制最大翻页次数 可选
+
+	public MyAVRequest() {
+	}
+
+	public MyAVRequest(String org, String dst, String date, String airline,
+			boolean direct, boolean nonstop, String stopCity, String fltNo,
+			String transit, int page) {
+		this.org = org;
+		this.dst = dst;
+		this.date = date;
+		this.airline = airline;
+		this.direct = direct;
+		this.nonstop = nonstop;
+		this.stopCity = stopCity;
+		this.fltNo = fltNo;
+		this.transit = transit;
+		this.page = page;
+	}
+
+	public String getOrg() {
+		return org;
+	}
+
+	public void setOrg(String org) {
+		this.org = org;
+	}
+
+	public String getDst() {
+		return dst;
+	}
+
+	public void setDst(String dst) {
+		this.dst = dst;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getAirline() {
+		return airline;
+	}
+
+	public void setAirline(String airline) {
+		this.airline = airline;
+	}
+
+	public boolean isDirect() {
+		return direct;
+	}
+
+	public void setDirect(boolean direct) {
+		this.direct = direct;
+	}
+
+	public boolean isNonstop() {
+		return nonstop;
+	}
+
+	public void setNonstop(boolean nonstop) {
+		this.nonstop = nonstop;
+	}
+
+	public String getFltNo() {
+		return fltNo;
+	}
+
+	public void setFltNo(String fltNo) {
+		this.fltNo = fltNo;
+	}
+
+	public String getTransit() {
+		return transit;
+	}
+
+	public void setTransit(String transit) {
+		this.transit = transit;
+	}
+
+	public String getStopCity() {
+		return stopCity;
+	}
+
+	public void setStopCity(String stopCity) {
+		this.stopCity = stopCity;
+	}
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	
+}

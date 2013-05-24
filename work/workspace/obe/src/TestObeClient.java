@@ -1,0 +1,25 @@
+import com.travelsky.sbeclient.SBEResponse;
+import com.travelsky.sbeclient.authorization.AccountActiveRequest;
+import com.travelsky.sbeclient.exceptions.SBEClientException;
+import com.travelsky.sbeclient.obe.ObeClient;
+import com.travelsky.sbeclient.obe.request.AVRequest;
+
+public class TestObeClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ClientInfo client=new ClientInfo("CANZHTD01","canzhtd01","1");
+		MyObeClient myObClient=new MyObeClient(client);
+		//myObClient.activeAccount();//�����˺�
+		myObClient.inactiveAccount();//�����˺�
+	   // myObClient.applyToken();//��ȡtoken             
+		//AVRequest request=new AVRequest();
+		//myObClient.av(request);//��avָ��
+		
+	}
+	
+}

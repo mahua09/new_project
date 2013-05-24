@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/ActiveMQ-5.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/commons-net-2.0.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/flexjson-2.1.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/sbeclient-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/scala-library-2.8.0.jar"/>
+	<classpathentry kind="lib" path="/home/vic/desktop/ObeClient/ObeClient/lib/socketpool-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
